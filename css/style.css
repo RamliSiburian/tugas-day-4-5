@@ -1,0 +1,383 @@
+/* 
+---------------
+General Styling
+---------------
+*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+span.required {
+    color: red;
+}
+
+.form-label {
+    display: block;
+    margin: 15px 0px 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgb(199, 226, 231);
+    resize: none;
+}
+
+.form-control:focus {
+    background-color: rgb(199, 226, 231);
+}
+
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons .submit {
+    padding: 5px 20px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 15px;
+}
+
+.buttons .submit:hover {
+    box-shadow: 1px 1px 10px whitesmoke, 2px 2px 15px blue;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* 
+---------------
+style bagia nav
+---------------
+*/
+
+nav {
+    padding: 0px 100px;
+    background-color: #f3f3f3;
+    display: flex;
+}
+
+nav ul {
+    padding-left: 0px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 25px;
+}
+
+nav ul li a,
+.main-index .cv {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover,
+.main-index .cv:hover {
+    border-bottom: 1px solid navy;
+
+}
+
+nav .nav-left {
+    flex: 50%;
+}
+
+nav .nav-right {
+    flex: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav .nav-right a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+nav .nav-right a:hover,
+.main-index section .contact:hover,
+.main-contact .submit:hover {
+    box-shadow: 1px 1px 10px whitesmoke, 2px 2px 15px blue;
+}
+
+
+
+
+/*
+----------------------------
+style bagian container index 
+----------------------------
+*/
+.main-index {
+    padding: 75px 100px;
+    background-color: #e3e7eb;
+    display: flex;
+}
+
+.main-index section {
+    padding: 50px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px #999;
+}
+
+.main-index section .left {
+    flex: 60%;
+}
+
+.main-index section .left p {
+    text-align: justify;
+}
+
+.main-index section .left .contact {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    margin: 15px 15px 0px 0px;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.main-index section .left .sosmed {
+    margin-top: 30px;
+}
+
+.main-index .sosmed i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 15px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.main-index .sosmed i:hover {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    transition: .2s;
+    border-bottom: 2px solid #000;
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 0px 1px 10px blue;
+}
+
+.main-index section .right {
+    flex: 40%;
+}
+
+.main-index section .right .card {
+    width: 300px;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fefefe;
+    text-align: center;
+    box-shadow: 0px 0px 15px #aaa;
+}
+
+.main-index section .right .card img {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.main-index section .right .card p {
+    text-align: center;
+    margin: 5px 0px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.main-index section .right .card span {
+    font-size: 13px;
+    margin-top: -5px;
+    display: block;
+}
+
+
+/* 
+------------------------------
+style container bagian contact
+------------------------------
+*/
+
+.main-contact {
+    background-color: #dce0e4;
+    padding: 50px 0px;
+}
+
+.main-contact section {
+    margin: 0px 100px;
+}
+
+.main-contact section form {
+    width: 400px;
+    margin: 0px auto;
+}
+
+.main-contact section form h1 {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+/* 
+------------------------------
+style container bagian main-project (myproject)
+------------------------------
+*/
+
+#form-project {
+    background-color: #e3e7eb;
+    padding: 50px 100px;
+}
+
+.form-project form {
+    margin: 0px auto;
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 15px;
+    border: 1px solid #fff;
+    box-shadow: 1px 3px 5px #fff, 3px 5px 7px #aaa;
+}
+
+.form-project h1 {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 0px;
+}
+
+.form-project .date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-project .start-date,
+.form-project .end-date {
+    flex: 50%;
+}
+
+.form-project .start-date {
+    margin-right: 15px;
+}
+
+
+/* 
+-----------------------------------
+style bagian my project (myproject)
+-----------------------------------
+*/
+#my-project {
+    background-color: #f8f8f8;
+    padding: 25px 100px 50px;
+}
+
+#my-project h1 {
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.my-project {
+    min-height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.my-project .card {
+    width: 300px;
+    padding: 20px;
+    margin-top: 50px;
+    /* margin-right: 35px; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #999;
+}
+
+.my-project .card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.my-project .card .title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.my-project .card .detail {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.my-project .card .technologi {
+    font-size: 30px;
+}
+
+.my-project .card .technologi i {
+    margin: 25px 25px 25px 0px;
+}
+
+/* .my-project .card .technologi i:hover {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    transition: .2s;
+    border-bottom: 2px solid #000;
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 0px 1px 10px blue;
+} */
+
+.my-project .card .action {
+    display: flex;
+}
+
+.my-project .card .action .edit {
+    flex: 50%;
+    margin-right: 15px;
+}
+
+.my-project .card .action .delete {
+    flex: 50%;
+}
+
+.my-project .card .action a {
+    background-color: #000;
+    padding: 5px 15px;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.my-project .card .action a:hover {
+    box-shadow: 1px 1px 10px whitesmoke, 2px 2px 15px blue;
+}
