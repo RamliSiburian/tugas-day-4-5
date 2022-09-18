@@ -16,13 +16,6 @@ function addProject(event) {
     let postAt = new Date();
 
 
-    if (image.length != 0) {
-        image = URL.createObjectURL(image[0])
-    } else {
-        return alert("image harus di isi");
-    }
-
-
     if (nodeJS) {
         nodeJS = document.getElementById("nodeJS").value;
     } else {
@@ -44,6 +37,14 @@ function addProject(event) {
         vueJS = "";
     }
 
+    if (projectName == "" || startDate == "" || endDate == "" || description == "") {
+        return alert("Field bertanda * harus di isi");
+    }
+    if (image.length != 0) {
+        image = URL.createObjectURL(image[0])
+    } else {
+        return alert("image harus di isi");
+    }
 
     let project = {
         projectName,
@@ -109,7 +110,7 @@ function getFullTime(time) {
     if (hours < 10) {
         hours = `0${hours}`;
     } else if (minutes < 10) {
-        hours = `0${minutes}`;
+        minutes = `0${minutes}`;
     }
 
     return `${day} ${months[month]} ${years} ${hours}:${minutes} WIB`;
@@ -134,8 +135,6 @@ function getDistanceTime(start, end) {
     let distanceSecond = Math.floor(distance / (milliSecond * 60));
 
     // return `${distanceDay} day ${distanceHours} hours ${distanceMinutes} Minutes ${distanceSecond} Seccond Left`;
-
-
     if (distanceDay > 0) {
         return `${distanceDay} Day Left`
     } else if (distanceHours > 0) {
@@ -145,5 +144,6 @@ function getDistanceTime(start, end) {
     } else {
         return `${distanceSecond} Second Left`
     }
+
 
 }
