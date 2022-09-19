@@ -14,6 +14,6 @@ function submitData() {
     let a = document.createElement('a')
     // a.href = `mailto:${emailReceiver}?subject=${subject}&body=${message}`  
 
-    a.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailReceiver}&su=${subject}&body=Hello my name is ${name}, ${message}`
+    a.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailReceiver}&su=${subject}&body=Hello my name is ${name}, ${message} , ${phoneNumber}`
     a.click();
 }
